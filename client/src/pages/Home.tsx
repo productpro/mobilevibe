@@ -6,7 +6,6 @@ import {
   ChevronDown,
   ChevronRight,
   Code2,
-  ExternalLink,
   Eye,
   Globe2,
   Layers3,
@@ -16,7 +15,6 @@ import {
   MousePointer2,
   Play,
   Rocket,
-  Send,
   ShieldCheck,
   Smartphone,
   Sparkles,
@@ -32,7 +30,6 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 const heroImage = "/manus-storage/async-images/6rNzl68JdZex8RBYG6osQI/image-1.webp";
 const finalImage = "/manus-storage/async-images/6rNzl68JdZex8RBYG6osQI/image-2.webp";
 const logoImage = "/manus-storage/WhatsAppImage2026-11-02at8.46.55AM_c41070e0.jpeg";
-const telegramUrl = "https://t.me/+SMTclxHBnv5jYWNk";
 const paystackUrl = import.meta.env.VITE_PAYSTACK_PAYMENT_URL as string | undefined;
 
 const reveal = {
@@ -389,7 +386,7 @@ function Home() {
         </section>
       </main>
 
-      <footer className="site-footer"><div className="site-container footer-grid"><div className="footer-brand"><Logo /><p>Empowering the next generation of creators to build with AI.</p><a className="footer-community" href={telegramUrl} target="_blank" rel="noreferrer"><Send size={15} /> Telegram community <ExternalLink size={13} /></a></div><div className="footer-links"><div><span>Explore</span><a href="#top">Home</a><a href="#curriculum">Curriculum</a><a href="#experience">About the course</a><a href="#faq">FAQs</a></div><div><span>Notes</span><a href="#pricing">Contact</a><a href="#footer-policy">Privacy policy</a><a href="#footer-policy">Terms & conditions</a><a href="#footer-policy">Refund policy</a></div></div></div><div className="site-container footer-bottom" id="footer-policy"><span>© {new Date().getFullYear()} Mobile Vibe Code Academy</span><span>Built for curious minds, one phone at a time.</span></div></footer>
+      <footer className="site-footer"><div className="site-container footer-grid"><div className="footer-brand"><Logo /><p>Empowering the next generation of creators to build with AI.</p></div><div className="footer-links"><div><span>Explore</span><a href="#top">Home</a><a href="#curriculum">Curriculum</a><a href="#experience">About the course</a><a href="#faq">FAQs</a></div><div><span>Notes</span><a href="#pricing">Contact</a><a href="#footer-policy">Privacy policy</a><a href="#footer-policy">Terms & conditions</a><a href="#footer-policy">Refund policy</a></div></div></div><div className="site-container footer-bottom" id="footer-policy"><span>© {new Date().getFullYear()} Mobile Vibe Code Academy</span><span>Built for curious minds, one phone at a time.</span></div></footer>
 
       <AnimatePresence>{showSticky && <motion.div className="mobile-sticky" initial={{ y: 90 }} animate={{ y: 0 }} exit={{ y: 90 }}><div><span>Mobile Vibe Masterclass</span><strong>₦7,000</strong></div><PurchaseButton>Get access</PurchaseButton></motion.div>}</AnimatePresence>
     </div>
