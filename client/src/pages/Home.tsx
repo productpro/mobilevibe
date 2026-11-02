@@ -31,6 +31,7 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 
 const heroImage = "/manus-storage/async-images/6rNzl68JdZex8RBYG6osQI/image-1.webp";
 const finalImage = "/manus-storage/async-images/6rNzl68JdZex8RBYG6osQI/image-2.webp";
+const logoImage = "/manus-storage/WhatsAppImage2026-11-02at8.46.55AM_c41070e0.jpeg";
 const telegramUrl = "https://t.me/+SMTclxHBnv5jYWNk";
 const paystackUrl = import.meta.env.VITE_PAYSTACK_PAYMENT_URL as string | undefined;
 
@@ -160,23 +161,10 @@ function scrollToId(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
-function BrandMark() {
-  return (
-    <span className="brand-mark" aria-hidden="true">
-      <span className="brand-mark-cursor">&gt;_</span>
-      <span className="brand-mark-dot" />
-    </span>
-  );
-}
-
 function Logo() {
   return (
-    <a className="logo-lockup" href="#top" aria-label="Mobile Vibe Code Academy home">
-      <BrandMark />
-      <span className="logo-type">
-        <strong>MOBILE VIBE</strong>
-        <small>CODE ACADEMY</small>
-      </span>
+    <a className="logo-lockup" href="#top" aria-label="ProductProHub home">
+      <img className="brand-logo-image" src={logoImage} alt="ProductProHub — Digital Innovation. Real-World Skills." />
     </a>
   );
 }

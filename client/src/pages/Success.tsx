@@ -2,6 +2,7 @@ import { ArrowLeft, ArrowUpRight, Check, LockKeyhole, Send, ShieldCheck } from "
 import { Link } from "wouter";
 
 const telegramUrl = "https://t.me/+SMTclxHBnv5jYWNk";
+const logoImage = "/manus-storage/WhatsAppImage2026-11-02at8.46.55AM_c41070e0.jpeg";
 
 export default function Success() {
   return (
@@ -9,7 +10,7 @@ export default function Success() {
       <div className="success-noise" />
       <div className="success-wrap">
         <Link href="/" className="success-back"><ArrowLeft size={15} /> Back to the masterclass</Link>
-        <div className="success-brand"><span className="brand-mark"><span className="brand-mark-cursor">&gt;_</span><span className="brand-mark-dot" /></span><span><strong>MOBILE VIBE</strong><small>CODE ACADEMY</small></span></div>
+        <div className="success-brand"><img className="success-logo-image" src={logoImage} alt="ProductProHub — Digital Innovation. Real-World Skills." /></div>
         <section className="success-card" aria-labelledby="success-title">
           <div className="success-check"><Check size={27} /></div>
           <p className="eyebrow eyebrow-light">VERIFIED PAYMENT HANDOFF</p>
